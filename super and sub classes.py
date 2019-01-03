@@ -69,3 +69,25 @@ class Car(Vehicle):
 
     def setVehicleType(self, vehicleType):
         Vehicle._setVehicleType(self, vehicleType)
+
+#Main function
+def main():
+    c = Car('Toyota', 1998, 6)
+    print("Car 1")
+    print(c.getBrand());
+    print(c.getCreationDate());
+    print(c.getNumSeats());
+    print(c.getVehicleType() + "\n");
+
+    print("Car 1 edit")
+    c.setBrand('Honda')
+    c.setCreationDate(1996)
+    c.setNumSeats(4)
+    
+    print(c.getBrand());
+    print(c.getCreationDate());
+    print(c.getNumSeats());
+    print(c.getVehicleType() + "\n");
+
+#run program
+main()
